@@ -13,13 +13,13 @@ function generateQrCode() {
 
     if (!qrCodeInputValue) return;
 
-    qrCodeBtn.innerText = "Gerando código..."
+    qrCodeBtn.innerText = "Generating code..."
 
     qrCodeImg.src = `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${qrCodeInputValue} `
 
     qrCodeImg.addEventListener("load", () => {
         container.classList.add("active");
-        qrCodeBtn.innerText = "Código criado!"
+        qrCodeBtn.innerText = "Code generated!"
     });
 }
 
@@ -38,6 +38,6 @@ qrCodeInput.addEventListener("keydown", (e) => {
 qrCodeInput.addEventListener("keyup", () => {
     if (!qrCodeInput.value) {
         container.classList.remove("active");
-        qrCodeBtn.innerText = "Gerar Qr Code";
+        qrCodeBtn.innerText = "Generate QR Code";
     }
 });

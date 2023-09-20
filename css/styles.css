@@ -11,7 +11,9 @@ body  {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background-color: #34db7a;
+    background-image: url("../img/bg.jpg");
+    background-size: cover;
+    /* background-color: #34db7a; */
 }
 
 /* Container */
